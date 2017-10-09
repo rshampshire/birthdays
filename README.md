@@ -4,7 +4,7 @@
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-## Run locally
+## Run locally
 
 ### Prerequisites
 
@@ -25,7 +25,7 @@
 * Migrate the database `$ heroku local:run ./node_modules/.bin/sequelize db:migrate`
 * Load seed data `$ heroku local:run ./node_modules/.bin/sequelize db:seed:all`
 
-### Web server
+### Web server
 
 * Specify a PORT number in the `.env` file e.g.
 
