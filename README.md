@@ -1,4 +1,4 @@
-# Birthdays
+# Get it running
 
 ## Run on Heroku
 
@@ -35,4 +35,36 @@
 
 Start the local server `$ heroku local -f Procfile.dev`
 
-![Celebrities](./grab.png)
+![Celebrities](./img-app-running.png)
+
+# Technical challenge
+
+We'd like you to spend no more than 4 hours on the task below (don’t worry if you don’t finish it all).
+
+To complete these exercises you will need personal GitHub and Heroku accounts.
+
+Make sure all your code is pushed back to your repos at the end of the 4 hours (or sooner if you finish early). _We will check the timestamps of the commits to confirm when the push took place._
+
+1. <input type="checkbox"> Fork this GitHub repo
+
+2. <input type="checkbox"> Deploy the birthdays app to Heroku using GitHub Integration ([Heroku GitHub Deploys](https://devcenter.heroku.com/articles/github-integration)) from your fork
+
+3. <input type="checkbox"> Configure the birthdays app to use [New Relic](https://devcenter.heroku.com/articles/github-integration)
+
+4. <input type="checkbox"> Configure the birthdays app to use [Papertrail](https://elements.heroku.com/addons/papertrail)
+
+5. <input type="checkbox"> Update the birthdays app so that every time the root `/` page is loaded, the name of the person in the first row of the table is written to Papertrail
+
+6. Create a second app “Hello”:
+
+    * <input type="checkbox"> Its source code should be in a separate GitHub repo and deployed to Heroku. It may use the language or framework of your choice.
+    * <input type="checkbox"> The root `/` page displays `Hello world` in a browser
+    * <input type="checkbox"> Every time the root `/` page is loaded, `Hello world` is written to the Papertrail add-on **attached to the birthdays app**.
+    * <input type="checkbox"> Report on the app’s performance via the New Relic add-on **attached to the birthdays app**. e.g. two apps show in the same New Relic dashboard as below.
+    ![New Relic](./img-new-relic.png)
+
+7. <input type="checkbox"> Modify the birthdays app so that the celebrities are ordered by who has the next birthday.
+    * e.g. if we view the app on 2nd June, Angelina Jolie will be the first row and Morgan Freeman will be the last/bottom row.
+    * e.g. if we view the app on 7th June, Kanye West will be the first row and Angelina Jolie will be the last/bottom row.
+
+
